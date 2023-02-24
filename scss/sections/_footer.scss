@@ -1,0 +1,55 @@
+.footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: $color_dark_blue;
+   display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    &_logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            max-width: 150px;
+        }
+        h4{
+                color: gray;
+        }
+    }
+    &_buttonlist{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        flex-direction: column;
+        li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                font-style: none;
+                color: $color_blue;
+                font-family: $Font_Buttons;
+                border: none;
+                text-decoration: none;
+                font-weight: 400;
+                list-style: none;   
+            }
+            h3{
+                color: $color_blueFonts;
+                text-decoration: none;
+                font-weight: 500;
+                list-style: none;
+            }
+        }
+        &--Redes{
+            
+            img{
+                max-width: 25px;
+                margin-inline-start: 10px;
+            }
+        }
+        
+    }
+   
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*************************variables******************************/
+/*************************sections******************************/
+.navbar {
+  width: 100vw;
+  height: 11vh;
+  background: #062c43;
+  background: linear-gradient(180deg, #062c43 70%, rgba(6, 44, 67, 0) 100%);
+  position: fixed;
+  display: flex;
+  z-index: 10; }
+  .navbar_left {
+    height: 100%; }
+    .navbar_left_Logo {
+      height: 100%;
+      font-style: none;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      align-items: center; }
+      .navbar_left_Logo h3 strong {
+        font-family: 'Audiowide', cursive;
+        color: #ced7e0; }
+      .navbar_left_Logo img {
+        max-height: 90%; }
+  .navbar_buttonsList {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: center; }
+    .navbar_buttonsList--boton {
+      list-style: none;
+      margin-inline-start: 40px; }
+      .navbar_buttonsList--boton a {
+        border: none;
+        outline: none;
+        text-decoration: none; }
+        .navbar_buttonsList--boton a span {
+          color: #ced7e0;
+          text-decoration: none;
+          outline: none;
+          border: none;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 20px; }
+          .navbar_buttonsList--boton a span:hover {
+            cursor: pointer;
+            color: #9098a0; }
+
+.breadcrumb-item.active {
+  color: white; }
+
+@media (max-width: 689px) {
+  .navbar_buttonsList {
+    justify-content: flex-end;
+    padding-right: 30px; }
+    .navbar_buttonsList--boton {
+      margin-inline-start: 30px; }
+      .navbar_buttonsList--boton a span {
+        font-size: 3vw; }
+  .navbar_left_Logo h3 {
+    display: none; } }
+
+.main {
+  padding-top: 8vh;
+  padding-bottom: 50px;
+  background-color: #054569;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main_firstCard {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main_firstCard--tittle {
+      display: block;
+      position: absolute;
+      top: 90px;
+      z-index: 2;
+      font-family: 'Audiowide', cursive;
+      font-size: 50px;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: gray; }
+  .main_presentationCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    max-width: 80vw;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 2;
+    color: #9ccddc;
+    padding-top: 10px; }
+    .main_presentationCard p {
+      color: #ced7e0; }
+    .main_presentationCard h2 {
+      margin: 20px; }
+    .main_presentationCard::before {
+      content: '';
+      width: 99vw;
+      height: 170px;
+      padding-top: 20px;
+      background-color: #5591a9;
+      position: absolute;
+      z-index: -1; }
+
+.carousel {
+  z-index: 0;
+  max-width: 80vw; }
+  .carousel .carousel-item a {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+    .carousel .carousel-item a h3 {
+      list-style: none;
+      position: absolute;
+      bottom: 30px;
+      z-index: 2;
+      color: #9ccddc;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 30px; }
+
+@media (max-width: 689px) {
+  .main_firstCard--tittle {
+    font-size: 6vw; }
+  .carousel .carousel-item a strong {
+    font-size: 5vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; } }
+
+.footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #062c43;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px; }
+  .footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer_logo img {
+      max-width: 150px; }
+    .footer_logo h4 {
+      color: gray; }
+  .footer_buttonlist {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    flex-direction: column; }
+    .footer_buttonlist li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .footer_buttonlist li a {
+        font-style: none;
+        color: #054569;
+        font-family: "Ubuntu", sans-serif;
+        border: none;
+        text-decoration: none;
+        font-weight: 400;
+        list-style: none; }
+      .footer_buttonlist li h3 {
+        color: #116494;
+        text-decoration: none;
+        font-weight: 500;
+        list-style: none; }
+    .footer_buttonlist--Redes img {
+      max-width: 25px;
+      margin-inline-start: 10px; }

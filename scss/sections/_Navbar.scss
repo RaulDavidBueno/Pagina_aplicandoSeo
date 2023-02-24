@@ -1,0 +1,94 @@
+.navbar {
+    width: 100vw;
+    height: 11vh;
+    background: rgb(6, 44, 67);
+    background: linear-gradient(180deg, rgba(6, 44, 67, 1) 70%, rgba(6, 44, 67, 0) 100%);
+    position: fixed;
+    display: flex;
+    z-index: 10;
+
+    &_left {
+        height: 100%;
+        &_Logo {
+            height: 100%;
+            font-style: none;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            h3 {
+                strong {
+                    font-family: 'Audiowide', cursive;
+                    color: $color_grayBlue;
+                }
+            }
+
+            img {
+                max-height: 90%;
+            }
+        }
+    }
+
+    &_buttonsList{
+        display: flex;
+        width: 100%;
+        
+        position: fixed;
+        justify-content: center;
+        &--boton{
+            list-style: none;
+            margin-inline-start: 40px;
+            a{
+                border: none;
+                outline: none;
+                text-decoration: none;
+                span{
+                    color: $color_grayBlue;
+                    text-decoration: none;
+                    outline: none;
+                    border: none;
+                    font-family: $Font_Buttons;
+                    font-size: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        color: $color_grayBlueFade ;
+                    }
+                   }
+            }
+           
+        }
+    }
+
+}
+
+.breadcrumb-item.active {
+    color: white;
+}
+
+@media (max-width: 689px) {
+    .navbar{
+
+        &_buttonsList{
+            justify-content: flex-end;
+            padding-right: 30px;
+            &--boton{
+                margin-inline-start: 30px;
+                a{
+                    span{
+                        font-size: 3vw;
+                    }
+                }
+            }
+
+        }
+
+        &_left {
+            &_Logo{
+                h3{
+                    display: none;
+                }
+            }
+        }
+    }
+}

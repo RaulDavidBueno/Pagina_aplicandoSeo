@@ -1,0 +1,105 @@
+.main{
+    padding-top: 8vh;
+    padding-bottom: 50px;
+    background-color: $color_blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_firstCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--tittle{
+            display: block;
+            position: absolute;
+                top: 90px;
+                z-index: 2;
+                font-family: 'Audiowide', cursive;
+                font-size: 50px;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: gray;
+                
+        }
+    }
+    
+    &_presentationCard{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family:  $Font_Buttons;
+        max-width: 80vw;
+        text-align: center;
+        margin-top: 20px;
+        z-index: 2;
+        color: $color_cyan;
+        padding-top: 10px;
+        p{
+            color: $color_grayBlue;
+        }
+        h2{
+            margin: 20px;
+        }
+        &::before   {
+            content: '';
+            width: 99vw;
+            height: 170px;
+            padding-top: 20px;
+            background-color: $color_light_blue;
+            position: absolute;
+            
+            z-index: -1;
+        }
+    }
+
+    
+}
+
+.carousel{
+        z-index: 0;
+        max-width: 80vw;
+       .carousel-item{
+       
+            a{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                h3  {
+                    list-style: none;
+                    position: absolute;
+                    bottom: 30px;
+                    z-index: 2;
+                    color: $color_cyan;
+                    font-family: $Font_Buttons;
+                    font-size: 30px;
+                }
+
+                
+            }
+            
+       } 
+}
+
+@media (max-width: 689px) {
+    .main{
+        &_firstCard{
+            &--tittle{
+                font-size: 6vw;
+            }
+        }
+    }
+
+    .carousel{
+       .carousel-item{
+            a{
+                strong{
+                    font-size: 5vw;
+                    -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color:black ;
+                }
+
+                
+            }
+            
+       } 
+}
+}
