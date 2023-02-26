@@ -33,7 +33,8 @@
     display: flex;
     width: 100%;
     position: fixed;
-    justify-content: center; }
+    justify-content: center;
+    z-index: -1; }
     .navbar_buttonsList--boton {
       list-style: none;
       margin-inline-start: 40px; }
@@ -67,7 +68,7 @@
     display: none; } }
 
 .main {
-  padding-top: 8vh;
+  padding-top: 9vh;
   padding-bottom: 50px;
   background-color: #054569;
   display: flex;
@@ -175,3 +176,58 @@
     .footer_buttonlist--Redes img {
       max-width: 25px;
       margin-inline-start: 10px; }
+
+.main_cardContainer {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+  block-size: auto;
+  contain: content; }
+  .main_cardContainer_card {
+    padding: 20px;
+    background-color: black;
+    border-radius: 15px;
+    list-style: none;
+    max-width: 26vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-inline-start: 10px;
+    margin-block-start: 10px;
+    list-style: none; }
+    .main_cardContainer_card h3 {
+      font-size: 1.5vw; }
+    .main_cardContainer_card p {
+      font-family: "Ubuntu", sans-serif; }
+    .main_cardContainer_card--resume {
+      background-color: gray;
+      border-radius: 10px;
+      padding-inline-start: 10px;
+      padding-top: 5px;
+      margin-top: 10px; }
+    .main_cardContainer_card img {
+      max-width: 23vw; }
+    .main_cardContainer_card--showMore {
+      margin-top: 5px;
+      background-color: gray;
+      border-radius: 25px;
+      padding-inline: 20px; }
+      .main_cardContainer_card--showMore h4 {
+        font-weight: 500;
+        font-family: "Ubuntu", sans-serif;
+        color: #ced7e0;
+        font-style: none;
+        border: none;
+        text-decoration: none;
+        outline: none; }
+      .main_cardContainer_card--showMore a {
+        font-style: none;
+        border: none;
+        text-decoration: none;
+        outline: none; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }

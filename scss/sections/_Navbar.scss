@@ -36,6 +36,7 @@
         
         position: fixed;
         justify-content: center;
+        z-index: -1;
         &--boton{
             list-style: none;
             margin-inline-start: 40px;
