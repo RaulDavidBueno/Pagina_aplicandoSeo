@@ -1,0 +1,28 @@
+.main {
+    &_whoIam {
+        display: flex;
+        margin-top: 80px;
+        max-width: 50vw;
+
+        img {
+            max-height: 30vh;
+        }
+
+        &--text {
+            background-color: $color_blueFonts ;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 0;
+            margin-left: 15px;
+            
+            p {
+
+                font-family: $Font_Buttons;
+                font-size: 20px;
+                color: $color_cyan;
+
+            }
+        }
+
+    }
+}

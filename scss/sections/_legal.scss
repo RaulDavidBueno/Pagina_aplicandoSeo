@@ -1,0 +1,24 @@
+.main{
+    &_legalCard{
+        background-color: $color_blueFonts;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 90px;
+        margin-inline: 30px;
+        p{
+            font-family: $Font_Buttons;
+            color: $color_cyan;
+            font-size: 1vw; 
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .main{
+        &_legalCard{
+            p{
+                font-size: 2vw;
+            }
+        }
+    }
+}

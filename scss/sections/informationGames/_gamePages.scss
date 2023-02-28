@@ -1,0 +1,61 @@
+.main {
+    &--tittleGames {
+        margin-top: 30px;
+        color: $color_cyan;
+        font-weight: 500;
+        font-family: $Font_Buttons;
+    }
+
+    &_sinopsis {
+        background-color: $color_blueFonts ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin-inline: 40px;
+        border-radius: 15px;
+        padding-inline: 20px;
+        padding-top: 10px;
+        margin-top: 25px;
+        p{
+            color: $color_grayBlue;
+            font-family: $Font_Buttons;
+            font-size: 1.5vw;
+            font-weight: 400;
+        }
+        &--buttonDownload{
+            background-color: $color_light_blue;
+            border-radius: 10px;
+            outline: none;
+            text-decoration: none;
+            padding-inline: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 10px 9px 14px 0px rgba(12, 12, 53, 0.51);
+            
+            h3{
+                font-family: $Font_Buttons;
+                font-weight: 500;
+                color: $color_grayBlue;
+                outline: none;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    
+}
+.carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+}
+.carousel-indicators{
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+}

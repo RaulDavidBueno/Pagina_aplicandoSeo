@@ -1,0 +1,51 @@
+.main{
+    min-height: 90vh;
+    &--tittleNetwork{
+        font-family: $Font_Buttons;
+        font-weight: 500;
+        margin-top: 20px;
+        font-size: 2vw;
+        color: $color_cyan;
+    }
+    &_linksCards{
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        &_card{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $color_blueFonts;
+            max-width: 20vw;
+            min-height: 30vh;
+            padding-inline: 1.5vw;
+            border-radius: 15px;
+            margin-inline:0.7vw;
+            p{
+                text-align: center;
+                font-family: $Font_Buttons;
+                color: $color_cyan;
+                font-size: 1vw;
+                margin-top: 15px;
+            }
+            img{
+                margin-top: 15px;
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 689px) {
+    .main{
+        &_linksCards{
+            &_card{
+                max-width: 25vw;
+                p{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}

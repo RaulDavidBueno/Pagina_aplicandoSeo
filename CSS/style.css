@@ -56,6 +56,12 @@
 .breadcrumb-item.active {
   color: white; }
 
+.breadcrumb {
+  margin-left: 10px; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(215, 234, 255, 0.75); }
+
 @media (max-width: 689px) {
   .navbar_buttonsList {
     justify-content: flex-end;
@@ -66,6 +72,24 @@
         font-size: 3vw; }
   .navbar_left_Logo h3 {
     display: none; } }
+
+@media (max-width: 1168px) {
+  .breadcrumb {
+    margin-left: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center; }
+    .breadcrumb::after {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.582);
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100%;
+      height: 30px;
+      top: 82px;
+      border-radius: 10px; } }
 
 .main {
   padding-top: 9vh;
@@ -141,7 +165,7 @@
   background-color: #062c43;
   display: flex;
   justify-content: space-between;
-  padding-right: 30px; }
+  padding-right: 20px; }
   .footer_logo {
     display: flex;
     flex-direction: column;
@@ -177,6 +201,19 @@
       max-width: 25px;
       margin-inline-start: 10px; }
 
+@media (max-width: 466px) {
+  .footer {
+    padding-right: 1vw; }
+    .footer_logo img {
+      max-width: 30vw; }
+    .footer_logo h4 {
+      font-size: 7vw; }
+    .footer_buttonlist li h3 {
+      font-size: 5vw; }
+    .footer_buttonlist--Redes img {
+      max-width: 25px;
+      margin-inline-start: 5px; } }
+
 .main_cardContainer {
   display: flex;
   list-style: none;
@@ -186,48 +223,189 @@
   contain: content; }
   .main_cardContainer_card {
     padding: 20px;
-    background-color: black;
+    background-color: #116494;
     border-radius: 15px;
     list-style: none;
     max-width: 26vw;
+    min-height: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-inline-start: 10px;
+    justify-content: space-around;
+    margin-inline: 5px;
     margin-block-start: 10px;
     list-style: none; }
     .main_cardContainer_card h3 {
-      font-size: 1.5vw; }
+      font-size: 2vw;
+      color: #9098a0;
+      font-family: "Ubuntu", sans-serif;
+      margin-top: 10px; }
     .main_cardContainer_card p {
       font-family: "Ubuntu", sans-serif; }
     .main_cardContainer_card--resume {
-      background-color: gray;
+      background-color: #5591a9;
       border-radius: 10px;
       padding-inline-start: 10px;
       padding-top: 5px;
-      margin-top: 10px; }
+      margin-bottom: 75px; }
     .main_cardContainer_card img {
       max-width: 23vw; }
     .main_cardContainer_card--showMore {
       margin-top: 5px;
-      background-color: gray;
+      background-color: #5591a9;
       border-radius: 25px;
       padding-inline: 20px; }
-      .main_cardContainer_card--showMore h4 {
-        font-weight: 500;
-        font-family: "Ubuntu", sans-serif;
-        color: #ced7e0;
-        font-style: none;
-        border: none;
-        text-decoration: none;
-        outline: none; }
       .main_cardContainer_card--showMore a {
         font-style: none;
         border: none;
         text-decoration: none;
         outline: none; }
+        .main_cardContainer_card--showMore a h4 {
+          font-weight: 500;
+          font-family: "Ubuntu", sans-serif;
+          color: #ced7e0;
+          font-style: none;
+          border: none;
+          text-decoration: none;
+          outline: none;
+          margin-bottom: 0; }
 
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+@media (max-width: 1168px) {
+  .main {
+    padding-top: 13vh; }
+    .main_cardContainer_card {
+      max-width: 29vw;
+      min-height: 34vw; }
+      .main_cardContainer_card h3 {
+        font-size: 2.5vw; }
+      .main_cardContainer_card--resume {
+        display: none; }
+      .main_cardContainer_card--showMore a h4 {
+        font-size: 3vw; } }
+
+.main {
+  min-height: 90vh; }
+  .main--tittleNetwork {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 2vw;
+    color: #9ccddc; }
+  .main_linksCards {
+    list-style: none;
+    display: flex;
+    padding-left: 0; }
+    .main_linksCards_card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: #116494;
+      max-width: 20vw;
+      min-height: 30vh;
+      padding-inline: 1.5vw;
+      border-radius: 15px;
+      margin-inline: 0.7vw; }
+      .main_linksCards_card p {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        color: #9ccddc;
+        font-size: 1vw;
+        margin-top: 15px; }
+      .main_linksCards_card img {
+        margin-top: 15px;
+        max-width: 90%; }
+
+@media (max-width: 689px) {
+  .main_linksCards_card {
+    max-width: 25vw; }
+    .main_linksCards_card p {
+      font-size: 2vw; } }
+
+.main_whoIam {
+  display: flex;
+  margin-top: 80px;
+  max-width: 50vw; }
+  .main_whoIam img {
+    max-height: 30vh; }
+  .main_whoIam--text {
+    background-color: #116494;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 0;
+    margin-left: 15px; }
+    .main_whoIam--text p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+      color: #9ccddc; }
+
+.main_legalCard {
+  background-color: #116494;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 90px;
+  margin-inline: 30px; }
+  .main_legalCard p {
+    font-family: "Ubuntu", sans-serif;
+    color: #9ccddc;
+    font-size: 1vw; }
+
+@media (max-width: 800px) {
+  .main_legalCard p {
+    font-size: 2vw; } }
+
+.main--tittleGames {
+  margin-top: 30px;
+  color: #9ccddc;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif; }
+
+.main_sinopsis {
+  background-color: #116494;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 40px;
+  border-radius: 15px;
+  padding-inline: 20px;
+  padding-top: 10px;
+  margin-top: 25px; }
+  .main_sinopsis p {
+    color: #ced7e0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400; }
+  .main_sinopsis--buttonDownload {
+    background-color: #5591a9;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    padding-inline: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 9px 14px 0px rgba(12, 12, 53, 0.51); }
+    .main_sinopsis--buttonDownload h3 {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      color: #ced7e0;
+      outline: none;
+      text-decoration: none;
+      margin-left: 10px; }
+
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 10px; }
+
+.carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 10px; }
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 10px; }

@@ -9,19 +9,24 @@
 
         &_card {
             padding: 20px;
-            background-color: black;
+            background-color: $color_blueFonts;
             border-radius: 15px;
             list-style: none;
             max-width: 26vw;
+            min-height: 500px;
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-inline-start: 10px;
+            justify-content: space-around;
+            margin-inline: 5px;
             margin-block-start: 10px;
             list-style: none;
 
             h3 {
-                font-size: 1.5vw;
+                font-size: 2vw;
+                color: $color_grayBlueFade;
+                font-family: $Font_Buttons;
+                margin-top: 10px;
             }
 
             p {
@@ -29,37 +34,41 @@
             }
 
             &--resume {
-                background-color: gray;
+                background-color: $color_light_blue;
                 border-radius: 10px;
                 padding-inline-start: 10px;
                 padding-top: 5px;
-                margin-top: 10px;
+                margin-bottom: 75px;
             }
 
             img {
                 max-width: 23vw;
             }
-            &--showMore{
+
+            &--showMore {
                 margin-top: 5px;
-                background-color: gray;
+                background-color: $color_light_blue;
                 border-radius: 25px;
                 padding-inline: 20px;
-                h4{
-                    font-weight: 500;
-                    font-family: $Font_Buttons;
-                    color: $color_grayBlue;
+
+                a {
                     font-style: none;
                     border: none;
                     text-decoration: none;
                     outline: none;
+
+                    h4 {
+                        font-weight: 500;
+                        font-family: $Font_Buttons;
+                        color: $color_grayBlue;
+                        font-style: none;
+                        border: none;
+                        text-decoration: none;
+                        outline: none;
+                        margin-bottom: 0;
+                    }
                 }
-                a{
-                    font-style: none;
-                    border: none;
-                    text-decoration: none;
-                    outline: none;
-                }
-                
+
             }
         }
     }
@@ -67,8 +76,35 @@
 }
 
 
-.center{
+.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 1168px) {
+    .main {
+        padding-top: 13vh;
+
+        &_cardContainer {
+            &_card {
+                max-width: 29vw;
+                min-height: 34vw;
+                h3{
+                    font-size: 2.5vw;
+                }
+                &--resume {
+                    display: none;
+                }
+                &--showMore {
+                    a{
+                        h4{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
