@@ -16,7 +16,8 @@
   display: flex;
   z-index: 10; }
   .navbar_left {
-    height: 100%; }
+    height: 100%;
+    z-index: -2; }
     .navbar_left_Logo {
       height: 100%;
       font-style: none;
@@ -116,24 +117,19 @@
     align-items: center;
     flex-direction: column;
     font-family: "Ubuntu", sans-serif;
-    max-width: 80vw;
+    width: 100vw;
     text-align: center;
     margin-top: 20px;
     z-index: 2;
     color: #9ccddc;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #5591a9; }
     .main_presentationCard p {
-      color: #ced7e0; }
+      color: #ced7e0;
+      max-width: 50vw; }
     .main_presentationCard h2 {
       margin: 20px; }
-    .main_presentationCard::before {
-      content: '';
-      width: 99vw;
-      height: 170px;
-      padding-top: 20px;
-      background-color: #5591a9;
-      position: absolute;
-      z-index: -1; }
 
 .carousel {
   z-index: 0;
@@ -280,7 +276,7 @@
     padding-top: 13vh; }
     .main_cardContainer_card {
       max-width: 29vw;
-      min-height: 34vw; }
+      min-height: 42vw; }
       .main_cardContainer_card h3 {
         font-size: 2.5vw; }
       .main_cardContainer_card--resume {
@@ -330,7 +326,8 @@
 .main_whoIam {
   display: flex;
   margin-top: 80px;
-  max-width: 50vw; }
+  max-width: 50vw;
+  align-items: center; }
   .main_whoIam img {
     max-height: 30vh; }
   .main_whoIam--text {
@@ -343,6 +340,13 @@
       font-family: "Ubuntu", sans-serif;
       font-size: 20px;
       color: #9ccddc; }
+
+@media (max-width: 927px) {
+  .main_whoIam {
+    flex-direction: column; }
+    .main_whoIam--text {
+      margin-inline: 2vw;
+      min-width: 82vw; } }
 
 .main_legalCard {
   background-color: #116494;

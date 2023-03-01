@@ -3,7 +3,7 @@
         display: flex;
         margin-top: 80px;
         max-width: 50vw;
-
+        align-items: center;
         img {
             max-height: 30vh;
         }
@@ -24,5 +24,17 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 927px) {
+    .main {
+        &_whoIam {
+            flex-direction: column;
+            &--text {
+                margin-inline: 2vw;
+                min-width: 82vw;
+            }
+        }
     }
 }

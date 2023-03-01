@@ -27,28 +27,22 @@
         align-items: center;
         flex-direction: column;
         font-family:  $Font_Buttons;
-        max-width: 80vw;
+        width: 100vw;
         text-align: center;
         margin-top: 20px;
         z-index: 2;
         color: $color_cyan;
         padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: $color_light_blue;
         p{
             color: $color_grayBlue;
+            max-width: 50vw;
         }
         h2{
             margin: 20px;
         }
-        &::before   {
-            content: '';
-            width: 99vw;
-            height: 170px;
-            padding-top: 20px;
-            background-color: $color_light_blue;
-            position: absolute;
-            
-            z-index: -1;
-        }
+       
     }
 
     
